@@ -1,24 +1,10 @@
-      <?php 
-        $statedata = file_get_contents('https://api.covid19india.org/data.json');
-        // $sumdata = file_get_content('https://api.covid19api.com/summary');
-        //  echo ($sumdata);
-        $livedata = json_decode($statedata, true);
-       $numstates = count($livedata['statewise']);
-//while($i=0)
-//{
-//	$conf= $livedata['statewise'][$i]['confirmed'];
-//	$act= $livedata['statewise'][$i]['active'];
-//	$rec= $livedata['statewise'][$i]['recovered'];
-//	$det= $livedata['statewise'][$i]['deaths'];
-//}
-	
- 
-    ?>
-
+  <?php
+include 'india.php';
+?> 	
 <!doctype html>
 <html lang="en">
   <head>
-    <title>corona HINT</title>
+    <title>Covid-19 Tracker</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -33,24 +19,25 @@
   <body>
 <div class="container-fluid bg-light p-5 text-center my-3">
  <h1>Total Cases in INDIA</h1>
+<a href="index.php">Global Tracker</a>
 </div>
 
 
-<div class="container my-5 ">
+<div class="container my-5">
     <div class="row text-center">
-        <div class="col-3 text-warning">
+        <div class="col-6 text-warning py-2">
             <h5>Confirmed</h5>
             <?php echo $livedata['statewise'][0]['confirmed'];?>
         </div>
-	<div class="col-3 text-info">
+	<div class="col-6 text-info py-2">
             <h5>Active</h5>
             <?php echo $livedata['statewise'][0]['active'];?>
         </div>	
-        <div class="col-3 text-success">
+        <div class="col-6 text-success py-2">
             <h5>Recovered</h5>
             <?php echo $livedata['statewise'][0]['recovered'];?>
         </div>
-        <div class="col-3 text-danger">
+        <div class="col-6 text-danger py-2">
             <h5>Deceased</h5>
             <?php echo $livedata['statewise'][0]['deaths'];?>
         </div>
@@ -92,7 +79,7 @@
           </table>
       <footer class="footer mt-auto py-3 bg-light">
   <div class="container text-center">
-    <span class="text-muted">MADE BY <a href="https://manishraypurkar.github.io/portfolio%20project/index.html">MANISH ANIL RAYPURKAR</a></span>
+    <span class="text-muted">designed and developed by: <a href="https://manishraypurkar.github.io/portfolio%20project/index.html">MANISH ANIL RAYPURKAR</a></span>
 <p class="text-muted">Data Sources:
 <a href="https://api.covid19india.org/data.json">https://api.covid19india.org</a>
 <a href="https://pomber.github.io/covid19/timeseries.json">https://pomber.github.io/covid19/timeseries.json</a>
