@@ -96,7 +96,11 @@ include 'main.php'
 <footer class="footer mt-auto py-3 bg-light">
   <div class="container text-center">
     <span class="text-muted">designed and developed by: <a href="https://manishraypurkar.github.io/portfolio%20project/index.html" target="_blank">MANISH ANIL RAYPURKAR</a></span>
-<p class="text-muted">Data Sources:
+
+     <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="HORIZONTAL" data-vanity="raypurkarmanish" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/raypurkarmanish?trk=profile-badge">Manish Raypurkar</a></div>
+              
+      
+      <p class="text-muted">Data Sources:
 <a href="https://api.covid19india.org/data.json">https://api.covid19india.org</a>
 <a href="https://pomber.github.io/covid19/timeseries.json">https://pomber.github.io/covid19/timeseries.json</a>
 </p>
